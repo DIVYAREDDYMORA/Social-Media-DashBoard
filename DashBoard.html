@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <style>
+        img{
+            height: 80px;
+            width: 80px;
+            border-radius: 40%;
+            float: left;
+        }
+        h1{
+            text-align: center;
+            font-size: 60px;
+        }
+        h4{
+            font-size: 15px;
+        }
+        .div{
+            height: 60px;
+            width: 30%;
+            text-align: center;
+           display: flex;
+           justify-content:space-evenly;
+           align-items: center;
+           float: right;
+        }.dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-button{
+            font-size: 20px;
+            border: none;
+            padding: 16px;
+        }
+        .dropdown-menu {
+            text-decoration: none;
+            padding: 12px 12px 12px 12px;
+            display:none;
+            position: absolute;
+            min-width: 150px;
+            z-index: 1;
+        }
+        .dropdown-menu li{
+            padding: 12px 12px 12px 12px;
+            text-decoration: none;
+            display: block;
+            font-size: 20px;
+        }
+        .dropdown-menu li:hover{
+            background-color: gainsboro;
+        }
+        .dropdown:hover .dropdown-menu{
+            display: block;
+        }
+        ol{
+            list-style: none;
+            border: 4px solid black;
+            background-color: lemonchiffon;
+        }
+        li{
+            border: 2px solid black;
+        }
+        .teddy{
+            animation: teddy 30s infinite;
+            height: 600px;
+            width: 100%;
+            background-color: white;
+            background-size: cover;
+            border: 2px solid paleturquoise;
+            background-color: paleturquoise;
+            background-size: cover;
+        }
+        @keyframes teddy{
+            0%{
+                background-image: url('https://cdn.ritekit.com/assets/img/ritepush/ritepush-hero.gif');
+            }
+            40%{
+                background-image: url('https://media1.tenor.com/images/2c73f3db789486b73e57fa7ee41652e7/tenor.gif?itemid=17833731');
+            }
+            80%{
+                background-image: url('https://cdn.dribbble.com/users/315053/screenshots/1933749/social-media-fold.gif');
+            }
+            100%{
+                background-image: url('https://www.gifmaniacos.es/wp-content/uploads/2017/09/gif-facebook-gifmaniacos.es-4.gif');
+            }
+        }
+        .divs{
+            height: 200px;
+            width: 100%;
+            text-align: center;
+        }
+        span{
+            color: purple;
+        }
+        button{
+            height: 30px;
+            width: 15%;
+            font-size: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .article{
+            height: 270px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+            border: 2px solid black;
+        }
+        .asides{
+            height: 350px;
+            width: 50%;
+            border-radius: 2px;
+           
+        }
+        .aside{
+            float: right;
+        }
+        .graph{
+            height: 330px;
+            width: 250px;
+            border-radius: 2px;
+            background-color: aqua;
+            float: right;
+        }
+        .Reddy{
+            animation: Reddy 1000s infinite;
+            height: 600px;
+            width: 100%;
+            background-color: white;
+            background-size: cover;
+            border: 2px solid paleturquoise;
+            background-color: paleturquoise;
+            background-size: cover;
+        }
+        @keyframes Reddy{
+            0%{
+                background-image: url('https://www.seniorvu.com/wp-content/uploads/2020/06/Digital-Marketing-Gif.2020-06-04-13_02_58.gif');
+            }
+            40%{
+                background-image: url('https://www.seniorvu.com/wp-content/uploads/2020/06/Digital-Marketing-Gif.2020-06-04-13_02_58.gif');
+            }
+            80%{
+                background-image: url('https://resetfest.com/wp-content/uploads/2019/07/Cover-Gif-social-media-and-parenting-1000x600.gif');
+            }
+            100%{
+                background-image: url('https://cdn.dribbble.com/users/4117384/screenshots/8561017/media/205f4da0b5981714cf3a71dd1aff6f65.gif');
+            }
+        }
+        body{
+            background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v481-bb-ning-11_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=c27cf7fc64343cf7e8cb0641230a74d3');
+            background-size: covers;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://ci3.googleusercontent.com/meips/ADKq_NbX1am19_vA1KDO8MTKqOlL7tBCQ7HEKjHHfBYG3Bx8kaEDkk9rKxFuUb-b-LbjU82gSWrt8xXJBB0fAywhUqoDbYu9pGrZOzZmcaRenhgh4YEFqBpyHUhsqgzRz-DoIpIIzMk_dh9F_Wf_IXgmre1tWEvJ_yna4dIEyuxuc07Jd4ZxY_YBJ1d4UunyRPdc9ytgD-12cszZo7KgPnt4pm32NAo1qEs=s0-d-e1-ft#https://dynamic.brandcrowd.com/preview/logodraft/f36f1a6a-0e0a-452e-8ef8-fad40575fc67/image/large.png?bust=4efc742f-76ae-48cc-8209-1fc1f59ad53a" alt="">
+    <h4>テディ@レディ</h4>
+    <header>
+        <h1>
+            Teddy@Reddy
+        </h1>
+        <div class="div">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.5-pZ5bIgBhH5wsZTF7rluwHaF7&pid=Api&rs=1&c=1&qlt=95&w=130&h=104" alt=""> &nbsp;&nbsp; 
+            <div class="dropdown">
+                <button class="dropdown-button">Profile</button>
+                <div class="dropdown-menu"> 
+                   <ol>
+                      <li>Name:Teddy</li>
+                      <li>EmailId:<span>*****@mail.com</span></li>
+                       <li>UserName:Teddy2525@</li>
+                       <li>Place:Guntur</li>
+                       <li>Job Role : Data Scientist</li>
+                      <li>Education : Graduation</li>
+                    </ol>
+                </div>
+            </div>
+            <h2><span>*****@gmail.com</span></h2> 
+        </div>
+    </header>
+    <div class="teddy"></div>
+    <nav>
+       <a href="index.html"><img src="https://www.freeiconspng.com/uploads/styled-left-arrow-icon-21.png" alt=""></a>
+    </nav>
+    <div>
+        <h2>DashBoard</h2>
+    </div>
+    <br><br>
+    <article class="article">
+        <section>
+            <figure>
+                <img src="https://tse1.mm.bing.net/th?id=OIP.OnyKD9W-8JWyMw6l_N8UNAHaHZ&pid=Api&P=0&h=180" alt="" >
+            </figure>
+            <div class="divs">
+                <h2>FaceBook</h2>
+                <p>Following : 186 Million</p>
+                <p>Likes : 2k Million </p>
+                <p>Comments : 6k Million</p>
+            </div>
+        </section>
+        <section>
+            <figure>
+                <img src="https://tse1.mm.bing.net/th?id=OIP.S01KcEMhyTXsa0jIxMZNDQHaFm&pid=Api&P=0&h=180" alt="" >
+            </figure>
+            <div class="divs">
+                <h2>Instagram</h2>
+                <p>Following : 586 Million</p>
+                <p>Likes : 12k Million </p>
+                <p>Comments : 16k Million</p>
+            </div>
+        </section>
+        <section>
+            <figure>
+                <img src="https://tikfreefollowers.com/wp-content/uploads/2020/05/successful-TikTok-Profiles.jpg" alt="" >
+            </figure>
+            <div class="divs">
+                <h2>TikTok</h2>
+                <p>Following : 686 Million</p>
+                <p>Likes : 32k Million </p>
+                <p>Comments : 26k Million</p>
+            </div>
+        </section>
+        <section>
+            <figure>
+                <img src="https://tse1.mm.bing.net/th?id=OIP.r4kJoxYZN2_2tQjUdRdtkQHaGF&pid=Api&P=0&h=180" alt="" >
+            </figure>
+            <div class="divs">
+                <h2>YouTube</h2>
+                <p>Following : 686 Million</p>
+                <p>Likes : 302k Million </p>
+                <p>Comments : 2006k Million</p>
+            </div>
+        </section>
+        <section>
+            <figure>
+                <img src="https://tse1.mm.bing.net/th?id=OIP.u8-VygkUnwaGso9q7SORcwHaHa&pid=Api&P=0&h=180" alt="" >
+            </figure>
+            <div class="divs">
+                <h2>LinkedIn</h2>
+                <p>Following : 586 Million</p>
+                <p>Likes : 305k Million </p>
+                <p>Comments : 2056k Million</p>
+            </div>
+        </section>
+    </article>
+    <br><br>
+    <aside class="aside">
+         <figure>
+            <img src="https://static.vecteezy.com/system/resources/previews/000/442/087/original/notification-vector-icon.jpg" alt="" class="logo">
+        </figure><br>
+           <h2>Notifications</h2><br>
+            <h2>For Govt Job Posts. Click Below Link </h2>
+            <button>
+                <a href="https://r.search.yahoo.com/_ylt=Awrx_NVdb9BlFNsh.Tu7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1708187614/RO=10/RU=https%3a%2f%2fwww.freejobalert.com%2fgovernment-jobs%2f/RK=2/RS=AXShe56Z44_maalb.1hIO2rN0NY-">Click</a>
+            </button><br>
+            <h2>For News Posts. Click Below Link</h2>
+            <button>
+              <a href="https://r.search.yahoo.com/_ylt=AwrKDp53c9BldWEiBoa7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1708188663/RO=10/RU=https%3a%2f%2fwww.ndtv.com%2f/RK=2/RS=3Lago4OBFSe9o_ZdyXgxmiOkwvw-"> Click</a>
+           </button><br>
+            <h2>For Software JOb Posts . Click Below Link</h2>
+            <button><a href="https://r.search.yahoo.com/_ylt=AwrPrHzzeNBlodciS1u7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1708190067/RO=10/RU=https%3a%2f%2fsoftwarejobupdates.com%2f/RK=2/RS=we.z59MzH8ovlj23iidN7tCgyoU-">Click</a>
+            </button>
+    </aside> 
+    <br><br>
+    <aside>
+        <figure>
+            &nbsp;
+            <img src="https://tse4.mm.bing.net/th?id=OIP.UrPEPmzifCkPXlKBisAz0gHaE0&pid=Api&P=0&h=180" alt="" class="graph">
+        </figure>
+    </aside> 
+    <aside class="asides">
+        <h2>FaceBook Updates</h2>
+        <p>Facebook And Instagram Set To Implement Apple Service Fee For Boosted Posts Via iOS Apps.
+            Facebook, Instagram to charge for boosted posts via iOS apps.</p>
+        <p>In a recent announcement impacting businesses and advertisers using Meta Platforms' social media apps, a significant change was unveiled for users of the iOS versions of Facebook and Instagram. Meta Platforms disclosed that businesses opting to "boost" their posts on these iOS apps would now face an additional 30 percent service charge imposed by Apple, the operator of the app store. Personal data from 200,000 Facebook Marketplace users were leaked to a hacker forum. Leaked data reportedly includes names, phone numbers, email addresses, Facebook IDs, and Facebook profile information.According to Bleeping Computer, the data was shared on a dark web forum by known leaker IntelBroker who says the data was hacked by someone who goes by "algoatson" on Discord. "In October 2023, a cyber criminal by the name of 'algoatson' on Discord, breached a contractor that manages cloud services for Facebook and stole its partial user database of 200,000 entries," said IntelBroker. The data was allegedly hacked by "algoatson" through a Meta contract worker.</p>
+        <a href="https://in.mashable.com/tech/69805/facebook-and-instagram-set-to-implement-apple-service-fee-for-boosted-posts-via-ios-apps">...Read More</a>
+    </aside>
+   <h2>WhatsApp Updates</h2>
+    <p>WhatsApp Channel To Get Ownership Transfer, Create Reports Feature; Check Details Inside</p>
+    <p>Meta owned WhatsApp is working on new features including enabling users to transfer ownership of its broadcasting tool,Channels. Here are more details on the update.</p>
+    <p>Popular social messaging app Meta is testing multiple new features for its one-way broadcasting tool, Channels. The new updates are currently available in WhatsApp’s Beta version and are expected to roll out soon for the stable version of the app.</p>
+    <a href="https://www.india.com/technology/whatsapp-channel-to-get-ownership-transfer-create-reports-feature-check-details-inside-6727960/">....Read More</a>
+    <h2>Instagram Updates</h2>
+    <p>ave you ever noticed the time that goes by in a flash when you scroll through Instagram's never-ending Reels and stories? Instagram AI has evolved so much that you see content purely based on your interest. With new Instagram updates and features constantly being released, one never gets tired of the platform.</p>
+    <p>Meta's photo-sharing app eschews the refined, aspirational aesthetics that were popular in the late 2010s. </p>
+    <a href="https://statusbrew.com/insights/instagram-updates/">....Read More</a>
+    <br><br>
+    <div class="Reddy"></div>
+    <br><br>
+    <footer>
+        <div style="text-align: center; display: flex; justify-content: space-evenly;">
+            <h2>&copy; Teddy@Reddy</h2>
+            <h2>&copy; Social Media website </h2>
+        </div>
+        <div style="text-align: center; display: flex; justify-content: space-evenly;">
+            <h2>&copy; All Copy Rights Are for Teddy@Reddy Website </h2>
+            <br>
+            <h2>support</h2>
+            <h2>Terms & Privacy</h2>
+        </div>
+    </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media DashBoard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+
+    <style>
+        img{
+            height: 80px;
+            width: 80px;
+            border-radius: 40%;
+            float: left;
+        }
+        h4{
+            font-size: 15px;
+            color: whitesmoke;
+            font-family: "Micro 5", sans-serif;
+        }
+        h1{
+            text-align: center;
+            font-size: 60px;
+            color: whitesmoke;
+            font-family: "Protest Guerrilla", sans-serif;
+        }
+        h2,p{
+            font-size: 20px ;
+            color: lavender;
+            font-family: "Protest Riot", sans-serif;
+        }
+        h3{
+            font-size: 25px;
+            color: violet;
+            font-family: "Protest Revolution", sans-serif;
+        }
+        span{
+            color: lightskyblue;
+            font-size: 20px;
+        }
+        .div{
+            height: 60px;
+            width: 30%;
+            text-align: center;
+           display: flex;
+           justify-content:space-evenly;
+           align-items: center;
+           float: right;
+        }
+        .profile{
+            height: 60px;
+            width: 60px;
+            border-radius: 40%;
+            float:right;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-button{
+            font-size: 20px;
+            border: none;
+            padding: 16px;
+            font-family: "Protest Revolution", sans-serif;
+        }
+        .dropdown-menu {
+            text-decoration: none;
+            padding: 12px 12px 12px 12px;
+            display:none;
+            position: absolute;
+            min-width: 150px;
+            z-index: 1;
+        }
+        .dropdown-menu li{
+            padding: 12px 12px 12px 12px;
+            text-decoration: none;
+            display: block;
+            font-size: 20px;
+        }
+        .dropdown-menu li:hover{
+            background-color: gainsboro;
+        }
+        .dropdown:hover .dropdown-menu{
+            display: block;
+        }
+        ol{
+            list-style: none;
+            border: 4px solid black;
+            background-color: lemonchiffon;
+            font-family: "Protest Revolution", sans-serif;
+        }
+        .menu-img{
+            height: 250px;
+            width: 250px;
+            align-items: center;
+        }
+        main{
+            height: 50px;
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color: firebrick;
+        }
+        a:hover{
+            color: purple;
+        }
+        li{
+            border: 2px solid black;
+        }
+        article{
+            background-image: url('https://tse1.mm.bing.net/th?id=OIP.x5X24tzNea3pokOaMFqPawHaNK&pid=Api&P=0&h=180');
+            background-size: cover;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            flex-direction: row;
+            width: 50%;
+            border: 3px solid plum;
+            background-color: plum;
+        }
+        .media{
+            height: 250px;
+            width: 300px;
+            border-radius: 2px;
+        }
+        article{
+            background-color: white;
+        }
+        body{
+            background-image: url('https://i.ytimg.com/vi/Q8KfV7jd8s8/maxresdefault.jpg');
+            background-size: cover;
+        }
+        .teddy{
+            animation: teddy 10s infinite;
+            height: 800px;
+            width: 100%;
+            background-color: white;
+            background-size: cover;
+        }
+        @keyframes teddy{
+            0%
+            {
+                background-image: url('https://tse3.mm.bing.net/th?id=OIP.zNwxLlx1p8xNJVrZSE9YtgHaEK&pid=Api&P=0&h=180'); 
+            }
+            20%{
+                background-image: url('https://tse1.mm.bing.net/th?id=OIP.jWKnaxlXiK_EkbOFQd98sAHaEK&pid=Api&P=0&h=180')
+            }
+            40%{
+                background-image: url('https://tse1.mm.bing.net/th?id=OIP.ZWRHkNTTXN8KOaMpEvaIIgHaEK&pid=Api&P=0&h=180');
+            }
+            80%{
+                background-image: url('https://tse1.mm.bing.net/th?id=OIP.rg-xmntcZMV0fN0_qENkugHaEo&pid=Api&P=0&h=180');
+            }
+            100%{
+                background-image: url('https://tse1.mm.bing.net/th?id=OIP.0G8_f9swwQoBSEAZvRnnSwHaEK&pid=Api&P=0&h=180');
+            }
+        }
+    </style>
+</head>
+<body>
+     <img src="https://ci3.googleusercontent.com/meips/ADKq_NbX1am19_vA1KDO8MTKqOlL7tBCQ7HEKjHHfBYG3Bx8kaEDkk9rKxFuUb-b-LbjU82gSWrt8xXJBB0fAywhUqoDbYu9pGrZOzZmcaRenhgh4YEFqBpyHUhsqgzRz-DoIpIIzMk_dh9F_Wf_IXgmre1tWEvJ_yna4dIEyuxuc07Jd4ZxY_YBJ1d4UunyRPdc9ytgD-12cszZo7KgPnt4pm32NAo1qEs=s0-d-e1-ft#https://dynamic.brandcrowd.com/preview/logodraft/f36f1a6a-0e0a-452e-8ef8-fad40575fc67/image/large.png?bust=4efc742f-76ae-48cc-8209-1fc1f59ad53a" alt="">
+    <h4>テディ@レディ</h4>
+    <header>
+        <h1>Teddy@Reddy</h1>
+        <div class="div">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.5-pZ5bIgBhH5wsZTF7rluwHaF7&pid=Api&rs=1&c=1&qlt=95&w=130&h=104" alt=""> &nbsp;&nbsp; 
+            <div class="dropdown">
+                <button class="dropdown-button">Profile</button>
+                <div class="dropdown-menu"> 
+                   <ol>
+                      <li>Name:Teddy</li>
+                      <li>EmailId:<span>*****@mail.com</span></li>
+                       <li>UserName:Teddy2525@</li>
+                       <li>Place:Guntur</li>
+                       <li>Job Role : Data Scientist</li>
+                      <li>Education : Graduation</li>
+                    </ol>
+                </div>
+            </div>
+            <h2><span>*****@gmail.com</span></h2> 
+        </div>
+    </header>
+    <main style="float: left;">
+        <nav>
+            <div class="dropdown">
+                <button class="dropdown-button">***</button>
+                <div class="dropdown-menu"> 
+                   <ol>
+                      <li><a href="DashBoard.html">DashBoard</a></li>
+                      <li>Following</li>
+                      <li>Liked</li>
+                      <li>History</li>
+                      <li>contact</li>
+                      <li>Settings</li>
+                      <li><a href="LogOut.html">LogOut</a></li>
+                    </ol>
+                    <img src="https://wallpapercave.com/wp/wp2610231.jpg" alt=""  class="menu-img">
+                </div>
+            </div>
+        </nav>
+    </main>
+    <section>
+        <nav class="nav">
+                <h2>contact Us</h2>
+                <h2>support</h2>
+                <h2>Terms&Conditions</h2>
+                <div class="dropdown">
+                    <button class="dropdown-button">Follow Us </button>
+                    <div class="dropdown-menu"> 
+                        <ol>
+                            <li>FaceBook</li>
+                            <li>Telegram</li>
+                            <li> LinkedIn </li>
+                            <li>Instagram </li>
+                            <li>GitHub</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <br><br><br>
+    <article>
+        <div class="teddy"></div>
+    </article>
+     <figure style="float: right;">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.3Fwy4aowhyJMzNzjw6gYrwHaEc&pid=Api&P=0&h=180" alt="" class="media">
+    </figure>
+    <br>
+    <div>
+        <h3>About Social Media Platforms</h3>
+            <br>
+            <p>Social media platforms are online networks where users create profiles, share content, and interact with others. They serve various purposes, from connecting friends and family to sharing news, opinions, and entertainment. Platforms like Facebook, Twitter, Instagram, and TikTok offer different features tailored to user preferences. While they facilitate communication and community-building, they also raise concerns about privacy, misinformation, and digital well-being. As they continue to evolve, social media platforms play significant roles in shaping modern communication and society.</p>
+    </div>  
+    <div>
+        <h3>Mostly Used Social Media Platforms Across The World</h3>
+    </div>
+    <figure>
+        <img src="https://tse4.mm.bing.net/th?id=OIP.luVQRwEED51xpMYyFrpnVgHaHa&pid=Api&P=0&h=180" alt="" class="media">
+    </figure>
+    <div>
+        <h3> 1. Facebook</h3>
+        <br>
+        <p>As the largest social network, Facebook offers a plethora of features including profiles, groups, pages, and messaging. Its extensive user base makes it a prime platform for connecting with friends, family, and communities, but concerns about privacy and misinformation persist.</p>
+    </div>
+    <figure>
+        <img src="https://tse4.mm.bing.net/th?id=OIP.TpHNVOa5sTw-o6D9XvNTMwHaFj&pid=Api&P=0&h=180" alt="" class="media">
+    </figure>
+    <div>
+        <h3>2. YouTube </h3>
+        <br>
+        <p>Known as the go-to platform for video content, YouTube provides users with a vast array of videos spanning entertainment, education, and more. Its user-friendly interface and recommendation algorithms make it addictive for many, though it's faced criticism for issues like copyright infringement and controversial content.</p>
+    </div>
+    <figure>
+        <img src="https://tse1.mm.bing.net/th?id=OIP.T4TDQFZPs9lv1vppMHMoGgHaEg&pid=Api&P=0&h=180" alt="" class="media">
+    </figure>
+    <div>
+        <h3> 3. WhatsApp</h3>
+        <p>WhatsApp's focus on privacy and encrypted messaging has made it immensely popular, particularly in regions where messaging apps are the primary means of communication. Its simplicity and reliability make it a staple for personal and business communication alike.</p>
+    </div>
+    <figure>
+        <img src="https://tse4.mm.bing.net/th?id=OIP.Sunl4D3cQt9iL8LW3tSkXwHaFj&pid=Api&P=0&h=180" alt="" class="media">
+    </figure>
+    <div>
+        <h3>4. Instagram</h3>
+        <p>Instagram's emphasis on visual content, particularly photos and short videos, has captured the attention of over a billion users. Its various features like Stories, IGTV, and Reels offer creative opportunities for expression and engagement, making it a favorite among influencers and brands.</p>
+    </div>
+    <figure>
+        <img src="https://tse2.mm.bing.net/th?id=OIP.UeTCWkbxiEqhSNeft171tgHaDt&pid=Api&P=0&h=180" alt="" class="media">
+    </figure>
+    <div>
+        <h3> 5. WeChat</h3>
+        <p>While primarily used in China, WeChat's multifunctionality as a messaging, social networking, and payment app has garnered over a billion users. Its integration with daily activities like shopping and banking has made it an indispensable part of life for many Chinese users.</p>
+    </div>
+    <div>
+        <h1></h1>
+        &nbsp; &nbsp;
+        <h1>
+            <h1></h1>
+        </h1>
+    </div>
+    <br><br><br>
+    <br><br><br><br>
+    <footer>
+        <div style="text-align: center; display: flex; justify-content: space-evenly;">
+            <h2>&copy; Teddy@Reddy</h2>
+            <h2>&copy; Social Media website </h2>
+        </div>
+        <div style="text-align: center; display: flex; justify-content: space-evenly;">
+            <h2>&copy; All Copy Rights Are for Teddy@Reddy Website </h2>
+            <br>
+            <h2>support</h2>
+            <h2>Terms & Privacy</h2>
+        </div>
+        
+    </footer>
+</body>
+</html>
+
